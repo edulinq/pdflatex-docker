@@ -4,9 +4,6 @@
 # This script compiles the input file twice to ensure correct references and
 # adjusts the ownership of output files to match the input file's owner and group.
 
-readonly THIS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly ROOT_DIR="${THIS_DIR}/.."
-
 function main() {
       set -e
       trap exit SIGINT
